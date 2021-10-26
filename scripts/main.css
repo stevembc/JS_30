@@ -1,0 +1,77 @@
+
+header {
+    width: 100%;
+    padding: 2rem;
+    background-color: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 1;
+    top: 0px; left: 0px;
+    margin-bottom: 50px;
+    color: inherit;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.logo {
+    width: auto;
+    height: 50px;
+}
+h1 {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    text-shadow: 0px 0px 16px rgba(0, 0, 0, 0.25);
+}
+
+
+/***************************** SWITCH BUTTON ****************************/
+body{
+    background-color: #222;
+    color: white;
+    transition: 0.5s;
+}
+
+body.active{
+    background: #F8F8F8;
+    color: black;
+    transition: 0.5s;
+}
+#toggle{
+    position: relative;
+    display: block;
+    width: 70px;
+    height: 34px;
+    border-radius: 100px;
+    background-color: white;
+    transition: 0.5s;
+    cursor: pointer;
+    box-shadow: inset 0px 0px 18px #c1c1c1;
+}
+#toggle .indicator{
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    width: 24px;
+    height: 24px;
+    background: linear-gradient(to bottom, #444, #222);
+    border-radius: 100%;
+    transform: scale(0.9);
+    transition: 0.5s;
+}
+#toggle.active{
+    background: linear-gradient(to bottom, #444, #222);
+    box-shadow: unset;
+}
+#toggle.active .indicator{
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+    background: linear-gradient(to bottom, #eaeaea, #f9f9f9);
+}
