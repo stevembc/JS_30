@@ -5,7 +5,7 @@ document.querySelector( "head" ).innerHTML +=
 
 // On Ajoute du contenu html pour le header.
 document.querySelector( "header" ).innerHTML +=
-'<a href="Accueil.html">' +
+'<a href="index.html">' +
     '<nav>' +
         '<img class="logo" src="assets/log.png">' +
         '<h1>+30 Jours de Javascript</h1>' +
