@@ -22,7 +22,7 @@ const color_figure = document.querySelector('.color-figure');
 const color_figcaption = document.querySelector('figcaption');
 
 //Shake Class on click
-//const href_null = document.querySelector('.href_null');
+const htag = document.querySelector('.htag.alert')
 
 
 toggle.onclick = function() {
@@ -31,3 +31,8 @@ toggle.onclick = function() {
     color_figure.classList.toggle('active');
     color_figcaption.classList.toggle('active');
 };
+
+htag.onclick = function(){
+    console.log('coucou')
+};
+
